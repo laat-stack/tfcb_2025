@@ -11,7 +11,7 @@ Replace the lines specified in _italics_ with your answers and save as a text fi
 
 Complete the interactive tutorial.
 
-_Did you hit any points of frustration, and if so, how could we improve the material to avoid that frustration?_
+_I did not encounter any points of frustration. The interactive tutorial was well explained, and it moved at a speed where I was able to follow along without getting lost_
 
 
 ## Problem 1
@@ -21,6 +21,8 @@ _Did you hit any points of frustration, and if so, how could we improve the mate
 **Write a script that outputs some user and location data and moves that output to a newly created directory**
 
 Make a single script that prints out a file called question01.txt. 
+
+
 
 This file should contain the following text:
 
@@ -53,7 +55,12 @@ slides<br>
 vader.txt<br>
 
 _Paste your SCRIPT here (not the output)_
+echo My username is $USERNAME > question01.txt
+echo My home directory is $HOME >> question01.txt
+echo The contents of the /workspaces/tfcb_2025/lectures/lecture04/ are $(ls /workspaces/tfcb_2025/lectures/lecture04/) >> question01.txt
 
+mkdir homework02
+mv question01.txt homework02
 
 ## Problem 2
 
@@ -77,4 +84,7 @@ You can make the contents of those files whatever you want (hint: slide 9... )
 
 _Paste your SCRIPT here (not the output)_
 
+cd homework02
+mkdir question02
 
+for n=25
