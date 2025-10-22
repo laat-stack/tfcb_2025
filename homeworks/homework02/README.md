@@ -55,6 +55,7 @@ slides<br>
 vader.txt<br>
 
 _Paste your SCRIPT here (not the output)_
+```
 echo My username is $USERNAME > question01.txt
 echo My home directory is $HOME >> question01.txt
 echo The contents of the /workspaces/tfcb_2025/lectures/lecture04/ are $(ls /workspaces/tfcb_2025/lectures/lecture04/) >> question01.txt
@@ -62,6 +63,7 @@ echo The contents of the /workspaces/tfcb_2025/lectures/lecture04/ are $(ls /wor
 mkdir homework02
 mv question01.txt homework02
 
+```
 ## Problem 2
 
 **20 points**
@@ -84,7 +86,11 @@ You can make the contents of those files whatever you want (hint: slide 9... )
 
 _Paste your SCRIPT here (not the output)_
 
+```
 cd homework02
 mkdir question02
+cd question02
 
-for n=25
+for i in `cat /workspaces/tfcb_2025/homeworks/homework02/list.txt` ; do echo list number $i > file$i.txt ; done
+
+```
